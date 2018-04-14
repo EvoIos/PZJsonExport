@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1913B356207F0CA300F4498F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913B355207F0CA300F4498F /* AppDelegate.swift */; };
+		1913B358207F0CA300F4498F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913B357207F0CA300F4498F /* ViewController.swift */; };
+		1913B35A207F0CA300F4498F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1913B359207F0CA300F4498F /* Assets.xcassets */; };
+		1913B35D207F0CA300F4498F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1913B35B207F0CA300F4498F /* Main.storyboard */; };
+		19FD631D20807FE2001F03ED /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FD631920807FE2001F03ED /* NoodleLineNumberView.m */; };
+		19FD631E20807FE2001F03ED /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FD631B20807FE2001F03ED /* NoodleLineNumberMarker.m */; };
+		867EA0BD9EEC90C1D241E208 /* Pods_PZJsonExport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A49BBAD443288364969FE15 /* Pods_PZJsonExport.framework */; };
+		C6041BD92081D914007ABB13 /* PZParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6041BD82081D914007ABB13 /* PZParse.swift */; };
+		C6041BE6208261E5007ABB13 /* PZConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6041BE5208261E5007ABB13 /* PZConstant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1913B352207F0CA300F4498F /* PZJsonExport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PZJsonExport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1913B355207F0CA300F4498F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1913B357207F0CA300F4498F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1913B359207F0CA300F4498F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1913B35C207F0CA300F4498F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1913B35E207F0CA300F4498F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1913B35F207F0CA300F4498F /* PZJsonExport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PZJsonExport.entitlements; sourceTree = "<group>"; };
+		19FD631820807FE1001F03ED /* PZJsonExport-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PZJsonExport-Bridging-Header.h"; sourceTree = "<group>"; };
+		19FD631920807FE2001F03ED /* NoodleLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberView.m; sourceTree = "<group>"; };
+		19FD631A20807FE2001F03ED /* NoodleLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberView.h; sourceTree = "<group>"; };
+		19FD631B20807FE2001F03ED /* NoodleLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberMarker.m; sourceTree = "<group>"; };
+		19FD631C20807FE2001F03ED /* NoodleLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberMarker.h; sourceTree = "<group>"; };
+		1A49BBAD443288364969FE15 /* Pods_PZJsonExport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PZJsonExport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F435FCC38720FA560E8CE4 /* Pods-PZJsonExport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJsonExport.release.xcconfig"; path = "Pods/Target Support Files/Pods-PZJsonExport/Pods-PZJsonExport.release.xcconfig"; sourceTree = "<group>"; };
+		2A414CE9369129295D5EEE54 /* Pods-PZJsonExport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJsonExport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PZJsonExport/Pods-PZJsonExport.debug.xcconfig"; sourceTree = "<group>"; };
+		C6041BD82081D914007ABB13 /* PZParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PZParse.swift; sourceTree = "<group>"; };
+		C6041BE5208261E5007ABB13 /* PZConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PZConstant.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1913B34F207F0CA300F4498F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867EA0BD9EEC90C1D241E208 /* Pods_PZJsonExport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1913B349207F0CA300F4498F = {
+			isa = PBXGroup;
+			children = (
+				1913B354207F0CA300F4498F /* PZJsonExport */,
+				1913B353207F0CA300F4498F /* Products */,
+				C98181A4385076CE99D77082 /* Pods */,
+				32868728F245BAC7852829FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1913B353207F0CA300F4498F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1913B352207F0CA300F4498F /* PZJsonExport.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1913B354207F0CA300F4498F /* PZJsonExport */ = {
+			isa = PBXGroup;
+			children = (
+				19FD631F20808D7C001F03ED /* Utilites */,
+				19FD631720807FC6001F03ED /* Noodle Line Number */,
+				1913B355207F0CA300F4498F /* AppDelegate.swift */,
+				C6041BE5208261E5007ABB13 /* PZConstant.swift */,
+				1913B357207F0CA300F4498F /* ViewController.swift */,
+				1913B35B207F0CA300F4498F /* Main.storyboard */,
+				C6041BD72081D87F007ABB13 /* Supporting Files */,
+			);
+			path = PZJsonExport;
+			sourceTree = "<group>";
+		};
+		19FD631720807FC6001F03ED /* Noodle Line Number */ = {
+			isa = PBXGroup;
+			children = (
+				19FD631C20807FE2001F03ED /* NoodleLineNumberMarker.h */,
+				19FD631B20807FE2001F03ED /* NoodleLineNumberMarker.m */,
+				19FD631A20807FE2001F03ED /* NoodleLineNumberView.h */,
+				19FD631920807FE2001F03ED /* NoodleLineNumberView.m */,
+				19FD631820807FE1001F03ED /* PZJsonExport-Bridging-Header.h */,
+			);
+			path = "Noodle Line Number";
+			sourceTree = "<group>";
+		};
+		19FD631F20808D7C001F03ED /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				C6041BD82081D914007ABB13 /* PZParse.swift */,
+			);
+			name = Utilites;
+			sourceTree = "<group>";
+		};
+		32868728F245BAC7852829FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A49BBAD443288364969FE15 /* Pods_PZJsonExport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6041BD72081D87F007ABB13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1913B359207F0CA300F4498F /* Assets.xcassets */,
+				1913B35E207F0CA300F4498F /* Info.plist */,
+				1913B35F207F0CA300F4498F /* PZJsonExport.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C98181A4385076CE99D77082 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A414CE9369129295D5EEE54 /* Pods-PZJsonExport.debug.xcconfig */,
+				26F435FCC38720FA560E8CE4 /* Pods-PZJsonExport.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1913B351207F0CA300F4498F /* PZJsonExport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1913B362207F0CA300F4498F /* Build configuration list for PBXNativeTarget "PZJsonExport" */;
+			buildPhases = (
+				81257F6FB6F8F6FF711662A5 /* [CP] Check Pods Manifest.lock */,
+				1913B34E207F0CA300F4498F /* Sources */,
+				1913B34F207F0CA300F4498F /* Frameworks */,
+				1913B350207F0CA300F4498F /* Resources */,
+				5130616CFCA6AE31992621BA /* [CP] Embed Pods Frameworks */,
+				AE546FCB5898275F86BC8E47 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PZJsonExport;
+			productName = PZJsonExport;
+			productReference = 1913B352207F0CA300F4498F /* PZJsonExport.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1913B34A207F0CA300F4498F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PZ;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = z;
+				TargetAttributes = {
+					1913B351207F0CA300F4498F = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1913B34D207F0CA300F4498F /* Build configuration list for PBXProject "PZJsonExport" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1913B349207F0CA300F4498F;
+			productRefGroup = 1913B353207F0CA300F4498F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1913B351207F0CA300F4498F /* PZJsonExport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1913B350207F0CA300F4498F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1913B35A207F0CA300F4498F /* Assets.xcassets in Resources */,
+				1913B35D207F0CA300F4498F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5130616CFCA6AE31992621BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PZJsonExport/Pods-PZJsonExport-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PZJsonExport/Pods-PZJsonExport-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81257F6FB6F8F6FF711662A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PZJsonExport-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE546FCB5898275F86BC8E47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PZJsonExport/Pods-PZJsonExport-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1913B34E207F0CA300F4498F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FD631D20807FE2001F03ED /* NoodleLineNumberView.m in Sources */,
+				1913B358207F0CA300F4498F /* ViewController.swift in Sources */,
+				1913B356207F0CA300F4498F /* AppDelegate.swift in Sources */,
+				19FD631E20807FE2001F03ED /* NoodleLineNumberMarker.m in Sources */,
+				C6041BD92081D914007ABB13 /* PZParse.swift in Sources */,
+				C6041BE6208261E5007ABB13 /* PZConstant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1913B35B207F0CA300F4498F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1913B35C207F0CA300F4498F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1913B360207F0CA300F4498F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1913B361207F0CA300F4498F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		1913B363207F0CA300F4498F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A414CE9369129295D5EEE54 /* Pods-PZJsonExport.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PZJsonExport/PZJsonExport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PZJsonExport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ablackcrow.PZJsonExport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PZJsonExport/Noodle Line Number/PZJsonExport-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		1913B364207F0CA300F4498F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F435FCC38720FA560E8CE4 /* Pods-PZJsonExport.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PZJsonExport/PZJsonExport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PZJsonExport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ablackcrow.PZJsonExport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PZJsonExport/Noodle Line Number/PZJsonExport-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1913B34D207F0CA300F4498F /* Build configuration list for PBXProject "PZJsonExport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1913B360207F0CA300F4498F /* Debug */,
+				1913B361207F0CA300F4498F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1913B362207F0CA300F4498F /* Build configuration list for PBXNativeTarget "PZJsonExport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1913B363207F0CA300F4498F /* Debug */,
+				1913B364207F0CA300F4498F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1913B34A207F0CA300F4498F /* Project object */;
+}
