@@ -72,11 +72,7 @@ class ViewController: NSViewController, NSTextViewDelegate, NSUserNotificationCe
         inputTextView.isAutomaticQuoteSubstitutionEnabled = false
         inputTextView.delegate = self
         inputTextView.becomeFirstResponder()
-        
-        var tmp = ["abc","efg","hid"]
-        var tmpArray = tmp.map { $0 + "," }.reduce("", +)
-        print(tmpArray)
-        
+     
     }
     
     func textDidChange(_ notification: Notification) {

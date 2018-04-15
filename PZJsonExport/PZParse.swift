@@ -125,7 +125,7 @@ class PZParse {
             .filter { (key) -> Bool in
                 return key != jsonInfo.rootClassName
             }.map({ (key) -> String in
-                return (jsonInfo.classPrefix ?? "") + key.capitalized + ","
+                return (jsonInfo.classPrefix ?? "") + key.capitalizingFirstLetter() + ","
             })
             .reduce("\n@class ", +)
         let range: Range = implicitState.index(implicitState.endIndex, offsetBy: -1) ..< implicitState.endIndex
@@ -137,7 +137,7 @@ class PZParse {
         var tmpString = ""
         for className in jsonInfo.classNames.reversed() {
             let prefix = className != jsonInfo.rootClassName ? (jsonInfo.classPrefix ?? "") : ""
-            tmpString.append("\n@interface \(prefix + className.capitalized) : NSObject \n\n")
+            tmpString.append("\n@interface \(prefix + className.capitalizingFirstLetter()) : NSObject \n\n")
             if  let value = jsonInfo.headerInfo[className] {
                 tmpString.append(value)
             }
@@ -150,9 +150,9 @@ class PZParse {
         var tmpString = ""
         for className in jsonInfo.classNames.reversed() {
             let prefix = className != jsonInfo.rootClassName ? (jsonInfo.classPrefix ?? "") : ""
-            tmpString.append("\n@implementation \(prefix + className.capitalized)\n")
+            tmpString.append("\n@implementation \(prefix + className.capitalizingFirstLetter())\n")
             if let mappingClassName = jsonInfo.mappingTable[className] {
-                tmpString.append("\n+ (NSDictionary *)objectClassInArray {\n \treturn @{@\"\(mappingClassName)\" : [\(prefix + mappingClassName.capitalized) class]};\n}\n")
+                tmpString.append("\n+ (NSDictionary *)objectClassInArray {\n \treturn @{@\"\(mappingClassName)\" : [\(prefix + mappingClassName.capitalizingFirstLetter()) class]};\n}\n")
             }
             if let mappingKeywords = jsonInfo.mappingKeywordsTable[className] {
                 tmpString.append("\n+ (NSDictionary *)mj_replacedKeyFromPropertyName {\n \treturn @{\(mappingKeywords.map{$0+","}.reduce("", +))};\n}\n")
@@ -200,7 +200,7 @@ fileprivate extension PZParse {
                 qualifier = "strong"
                 let first = subJson.arrayValue.first
                 if  first?.type == .dictionary {
-                    type = "NSArray <\(jsonInfo.classPrefix ?? "")\(key.capitalized) *> *"
+                    type = "NSArray <\(jsonInfo.classPrefix ?? "")\(key.capitalizingFirstLetter()) *> *"
                     shared.mappingTable[tmpClassName] = key
                     self.parse(key, json: first!)
                 } else if first?.type == .string {
@@ -212,7 +212,7 @@ fileprivate extension PZParse {
                 }
             case .dictionary:
                 qualifier = "strong"
-                type = "\(jsonInfo.classPrefix ?? "")\(key.capitalized) *"
+                type = "\(jsonInfo.classPrefix ?? "")\(key.capitalizingFirstLetter()) *"
                 self.parse(key, json: subJson)
             case .string:
                 qualifier = "copy"
@@ -285,3 +285,15 @@ fileprivate extension PZParse {
         })
     }
 }
+
+fileprivate extension String {
+    // from : https://stackoverflow.com/a/26306372
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).uppercased() + dropFirst()
+    }
+    
+    mutating func capitalizeFirstLetter() {
+        self = self.capitalizingFirstLetter()
+    }
+}
+
