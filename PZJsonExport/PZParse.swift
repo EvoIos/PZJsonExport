@@ -149,8 +149,12 @@ class PZParse {
     private func makeupMessagesClasses() -> String {
         var tmpString = ""
         for className in jsonInfo.classNames.reversed() {
-            let prefix = className != jsonInfo.rootClassName ? (jsonInfo.classPrefix ?? "") : ""
-            tmpString.append("\n@implementation \(prefix + className.capitalizingFirstLetter())\n")
+            let prefix = jsonInfo.classPrefix ?? ""
+			if className ==  jsonInfo.rootClassName {
+				 tmpString.append("\n@implementation \(className.capitalizingFirstLetter())\n")
+			} else {
+				 tmpString.append("\n@implementation \(prefix + className.capitalizingFirstLetter())\n")
+			}
             if let mappingClassName = jsonInfo.mappingTable[className] {
                 tmpString.append("\n+ (NSDictionary *)objectClassInArray {\n \treturn @{@\"\(mappingClassName)\" : [\(prefix + mappingClassName.capitalizingFirstLetter()) class]};\n}\n")
             }
